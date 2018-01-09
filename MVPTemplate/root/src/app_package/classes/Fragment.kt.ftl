@@ -14,8 +14,11 @@ import ${packageApp}.base.IBaseView
  */
 
 class ${className}Fragment: BaseFragment(), ${className}Contractor.View {
+
+    private val presenter = ${className}Presenter()
+
     override fun getPresenter(): IBasePresenter<IBaseView>? {
-        return ${className}Presenter() as? IBasePresenter<IBaseView>
+        return presenter as? IBasePresenter<IBaseView>
     }
 
     override fun isShowToolbar(): Boolean {
