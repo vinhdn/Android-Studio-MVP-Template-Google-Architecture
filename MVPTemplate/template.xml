@@ -1,7 +1,7 @@
 <template format="4"
     revision="1"
-    name="MVP Template Google Architect"
-    description="Creates a new MVP classes - Presenter, View and Contract between the two">
+    name="MVP Template Biin Android"
+    description="Creates a new MVP classes - Presenter, View and Contractor between the two">
 
     <category value="MVP" />
 
