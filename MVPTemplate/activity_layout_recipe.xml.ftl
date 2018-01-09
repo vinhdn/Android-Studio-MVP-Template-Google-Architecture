@@ -1,9 +1,10 @@
 <recipe>
-
-    <instantiate from="src/app_package/layout/activity_layout.xml.ftl"
-                 to="${escapeXmlAttribute(resOut)}/layout/${activityLayoutName}_layout.xml" />
+    <#if includeActivity>
+      <instantiate from="src/app_package/layout/activity_layout.xml.ftl"
+                    to="${escapeXmlAttribute(resOut)}/layout/activity_${classNameLower}.xml" />
+    </#if>
 
     <instantiate from="src/app_package/layout/fragment_layout.xml.ftl"
-                 to="${escapeXmlAttribute(resOut)}/layout/${fragmentLayoutName}_layout.xml" />
+                 to="${escapeXmlAttribute(resOut)}/layout/fragment_${classNameLower}.xml" />
 
 </recipe>
